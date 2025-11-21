@@ -1,0 +1,17 @@
+export default function Page() {
+  return (
+    <main className="min-h-screen">
+      <section className="max-w-3xl mx-auto px-4 py-16 space-y-6">
+        <h1 className="text-4xl font-bold tracking-tight">Incident Response</h1>
+        <p className="text-slate-600">On-call IR retainers with 1-hour SLA, forensics support, and tabletop exercises.</p>
+        <ol className="list-decimal pl-5 space-y-2">
+          <li>Intake & triage</li>
+          <li>Containment (identity, endpoint, network)</li>
+          <li>Eradication & recovery</li>
+          <li>Lessons learned & hardening</li>
+        </ol>
+        <a href="/contact" className="inline-flex items-center rounded-2xl px-5 py-3 font-medium shadow-sm bg-sky-500 text-white hover:bg-sky-600">Talk to IR lead</a>
+      </section>
+    </main>
+  );
+}

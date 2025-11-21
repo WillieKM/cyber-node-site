@@ -1,0 +1,16 @@
+export default function Page() {
+  return (
+    <main className="min-h-screen">
+      <section className="max-w-3xl mx-auto px-4 py-16 space-y-6">
+        <h1 className="text-4xl font-bold tracking-tight">Compliance Readiness</h1>
+        <p className="text-slate-600">NIST CSF, SOC2, HIPAA, and PCI prep with pragmatic controls and auditor-ready artifacts.</p>
+        <ul className="list-disc pl-5 space-y-2">
+          <li>Gap assessment & roadmap</li>
+          <li>Policy set & control implementation</li>
+          <li>Evidence collection & audit support</li>
+        </ul>
+        <a href="/contact" className="inline-flex items-center rounded-2xl px-5 py-3 font-medium shadow-sm bg-sky-500 text-white hover:bg-sky-600">Get readiness plan</a>
+      </section>
+    </main>
+  );
+}

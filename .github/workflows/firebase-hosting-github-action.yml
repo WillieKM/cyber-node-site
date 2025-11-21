@@ -1,0 +1,55 @@
+# This workflow uses Workload Identity Federation instead of a Service Account key
+# to authenticate with Google Cloud, bypassing the Organization Policy restriction
+# (iam.disableServiceAccountKeyCreation).
+
+name: Deploy to Firebase Hosting on PR
+
+on:
+  pull_request:
+
+jobs:
+  build_web_app:
+    name: Build & Deploy Preview
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+<<<<<<< HEAD
+      - run: npm install && npm run build && npm run export # Corrected command for Next.js static build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: firebase-hosting-files
+          path: './out' # Next.js default output directory
+=======
+
+>>>>>>> f5aac7378c69e8278fe19d1eb948c81efcf0c9c2
+
+  deploy_preview:
+    name: Deploy to Preview Channel
+    needs: build_web_app
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: firebase-hosting-files
+<<<<<<< HEAD
+          path: './out'
+
+      # CRITICAL FIX: The action repository path must be fully qualified.
+      - uses: FirebaseExtended/action-hosting-deploy@v0 
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_CYBER_NODE }}'
+          channelId: live
+          projectId: cyber-node
+=======
+
+      - uses: 'firebase/hosting-deploy@v0'
+        with:
+          repoToken: '${{ secrets.GITHUB_TOKEN }}'
+          projectId: 'my-student-portal-e4922'
+          channelId: 'preview-${{ github.event.number }}'
+          channelDuration: '7d'
+>>>>>>> f5aac7378c69e8278fe19d1eb948c81efcf0c9c2

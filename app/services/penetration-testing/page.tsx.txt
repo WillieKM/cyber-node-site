@@ -1,0 +1,17 @@
+export default function Page() {
+  return (
+    <main className="min-h-screen">
+      <section className="max-w-3xl mx-auto px-4 py-16 space-y-6">
+        <h1 className="text-4xl font-bold tracking-tight">Penetration Testing</h1>
+        <p className="text-slate-600">Red-team style assessments targeting real attack paths: identity, endpoint, network, and app.</p>
+        <ol className="list-decimal pl-5 space-y-2">
+          <li>Scoping & rules of engagement</li>
+          <li>Recon & threat modeling</li>
+          <li>Exploitation & privilege escalation</li>
+          <li>Reporting with remediation guidance</li>
+        </ol>
+        <a href="/contact" className="inline-flex items-center rounded-2xl px-5 py-3 font-medium shadow-sm bg-sky-500 text-white hover:bg-sky-600">Request a quote</a>
+      </section>
+    </main>
+  );
+}

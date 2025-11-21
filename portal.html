@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Revealed Bible College</title>
+    <!-- Load Tailwind CSS and Custom Configuration -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#0C2B64', // Revelation Blue (Deep Blue)
+                        'secondary': '#FFC72C', // Truth Gold (Vibrant Yellow)
+                        'background-light': '#F9FAFC',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFC;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body class="antialiased p-4 sm:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Header & Navigation -->
+        <header class="bg-primary p-6 rounded-t-2xl shadow-xl mb-8 flex flex-col sm:flex-row justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-secondary mb-4 sm:mb-0">About RBC</h1>
+            <nav class="space-x-4 text-base font-medium">
+                <a href="index.html" class="text-blue-200 hover:text-white transition duration-150">Home</a>
+                <a href="portal.html" class="text-blue-200 hover:text-white transition duration-150">Portal</a>
+                <a href="academics.html" class="text-blue-200 hover:text-white transition duration-150">Academics</a>
+                <span class="text-secondary">About Us</span>
+                <a href="contact.html" class="text-blue-200 hover:text-white transition duration-150">Contact</a>
+            </nav>
+        </header>
+
+        <!-- Main Content Grid -->
+        <div class="bg-white p-8 md:p-12 rounded-xl shadow-2xl space-y-12">
+            
+            <!-- Section: Our Vision -->
+            <section>
+                <h2 class="text-3xl font-extrabold text-primary mb-4 border-b-2 border-secondary pb-2">Our Vision</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    To be a leading center for theological education, empowering believers to accurately handle the Word of Truth and live lives transformed by the Holy Spirit. We seek to raise up leaders who are not just knowledgeable, but deeply rooted in character and mission-focused.
+                </p>
+            </section>
+
+            <!-- Section: Mission Statement -->
+            <section>
+                <h2 class="text-3xl font-extrabold text-primary mb-4 border-b-2 border-secondary pb-2">Mission Statement</h2>
+                <div class="bg-yellow-50 p-6 rounded-xl border-l-4 border-secondary">
+                    <p class="text-xl font-semibold text-primary italic">
+                        "Revealing God's heart through dedicated study, practical ministry training, and a commitment to authentic community."
+                    </p>
+                </div>
+            </section>
+
+            <!-- Section: Core Values -->
+            <section>
+                <h2 class="text-3xl font-extrabold text-primary mb-6 border-b-2 border-secondary pb-2">Core Values</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Value 1 -->
+                    <div class="p-6 border border-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Biblical Authority</h3>
+                        <p class="text-gray-600">The infallible Word of God is the ultimate foundation for all teaching, practice, and life decisions. We are committed to exegetical excellence.</p>
+                    </div>
+                    <!-- Value 2 -->
+                    <div class="p-6 border border-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Spirit-Led Ministry</h3>
+                        <p class="text-gray-600">Education must be paired with spiritual empowerment. We emphasize reliance on the Holy Spirit for effective ministry and personal transformation.</p>
+                    </div>
+                    <!-- Value 3 -->
+                    <div class="p-6 border border-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Transformative Community</h3>
+                        <p class="text-gray-600">We foster a community environment where students grow together in faith, accountability, and mutual encouragement.</p>
+                    </div>
+                    <!-- Value 4 -->
+                    <div class="p-6 border border-gray-100 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+                        <h3 class="text-xl font-bold text-secondary mb-2">Practical Application</h3>
+                        <p class="text-gray-600">The knowledge gained must be applied. We integrate academic study with hands-on ministry experience and outreach.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="mt-8 text-center text-sm text-gray-500 p-4 border-t border-gray-200">
+            &copy; 2025 Revealed Bible College. All rights reserved.
+        </footer>
+    </div>
+</body>
+</html>
